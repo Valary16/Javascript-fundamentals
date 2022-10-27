@@ -69,6 +69,44 @@ console.log(week);
  console.log(subject.sort());
  const pass = [70, 80, 90, 95];
  console.log(pass.sort());
+ const myEggs = ["brown", "brown"];
+ console.log(myEggs);
+ myEggs.push("pink");
+ console.log(myEggs);
+ myEggs.push("pink", "blue");
+ myEggs [0] = ("green", "beige");
+console.log(myEggs);
+//Nested arrays
+const animals = [
+    ['man', 'monkey', 'bat', 'cows', 'lions'],
+    ['lizard', 'crocodile', 'chameleon', ''],
+    ['frogs', 'newts',  'toads', 'salamander']
+];
+// Mammals = man, monkey, bat, cows, lions
+//reptiles = lizard, crocodile, chameleon
+//amphibians = frogs, newts,  toads, salamander
+// console.log(animals);
+console.log(animals[0].join('-'));
+// console.log(animals.sort());
+// console.log(animals);
+const Mammals =  animals[0].join(' ');
+console.log(Mammals);
+//using template literals
+console.log(`Mammals : ${Mammals}`);
+const reptiles = animals[1];
+console.log(reptiles);
+console.log(`reptiles : ${reptiles}`);
+const amphibians = animals[2].join('.');
+console.log(amphibians);
+console.log(`amphibians : ${reptiles}`);
+//objects
+const newItems = {} //creating new items - object literals
+console.log(newItems);
+
+
+
+
+
 
 
 
