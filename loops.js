@@ -52,3 +52,62 @@ for (
    }
    console.log(`Guessed ${guess} & targetNum: ${targetNum} ...CORRECT GUESS`);
 
+   for (let i = 50; i<50; i+=5 ){
+    console.log(i)
+   }
+   for (let i = 50; i>=0; i-=5 ){
+    console.log(i)
+   }
+   for (let i = 10; i>=2; i-=2 ){
+    console.log(i)
+   }
+   for (let i = 10; i>=0; i-=2 ){
+    console.log(i)
+   }
+  const movies =[
+    {Title : "Prison Break", Rating : "4"},  {Title : "Gotham", Rating : "7"},  
+     {Title : "Halem", Rating : "9"}
+  ];
+  console.log(movies);
+
+// BREAK  KEY WORD
+let targetNum1 = Math.floor(Math.random()*10);
+let guess1 = Math.floor(Math.random()*10);
+while(true){
+    guess = Math.floor(Math.random()*10);
+    if(guess === targetNum1){
+        console.log(`Guessed ${guess1} & targetNum1 : ${targetNum1}...Correct`);
+        break;
+    }
+}
+ //ITERATION(for ... of)
+ const fruits = ["mangoes", "apple", "orange", "melon", "pineapples"];
+ for (let set of fruits){
+    console.log(set[0]); // gives initials of each set
+    console.log(`${set}-canva.com ${set}`) // adds link to each item
+    console.log(fruits[1])
+ }
+ let string2 = "watermelon";
+ for(let ladys of string2 ){
+console.log(`${ladys}- I am proud to belong`)
+ }
+
+ console.log(`${string2}-i am proud to belong`)
+ // making the rows display
+ const magicSquare =[
+    [2, 3, 4],
+    [4, 5, 6],
+    [7, 9, 10]
+ ];
+ for (let row of magicSquare){
+    // console.log(row)
+ let sum = 0;
+ for(let num of row){
+    sum += num 
+}
+console.log(`Row of ${row} Totals to ${sum}`)
+ }
+
+
+
+

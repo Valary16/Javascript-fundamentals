@@ -102,7 +102,29 @@ console.log(`amphibians : ${reptiles}`);
 //objects
 const newItems = {} //creating new items - object literals
 console.log(newItems);
-
+const numbers = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,21, 22, 23, 24, 25,
+26,27, 28,29, 30]
+console.log(numbers);
+for(i = 0; i<numbers.length; i++) {
+    if (numbers[i]%2 !== 0){
+        console.log(`${numbers[i]} is an odd number`)
+    }
+}
+for(i = 0; i<numbers.length; i++) {
+    if (numbers[i]%2 == 0){
+        console.log(`${numbers[i]} is an odd number`)
+    }
+}
+// BREAK  KEY WORD
+let targetNum = Math.floor(Math.random()*10);
+let guess = Math.floor(Math.random()*10);
+while(true){
+    guess = Math.floor(Math.random()*10);
+    if(guess === targetNum){
+        console.log(Guessed ${guess} & trgetNum: ${targetNum}...Correct);
+        break;
+    }
+}
 
 
 
