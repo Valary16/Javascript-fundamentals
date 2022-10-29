@@ -92,22 +92,88 @@ while(true){
 console.log(`${ladys}- I am proud to belong`)
  }
 
- console.log(`${string2}-i am proud to belong`)
- // making the rows display
- const magicSquare =[
-    [2, 3, 4],
-    [4, 5, 6],
-    [7, 9, 10]
- ];
- for (let row of magicSquare){
-    // console.log(row)
- let sum = 0;
- for(let num of row){
-    sum += num 
-}
-console.log(`Row of ${row} Totals to ${sum}`)
+//  console.log(`${string2}-i am proud to belong`)
+//  // making the rows display
+//  const magicSquare =[
+//     [2, 3, 4],
+//     [4, 5, 6],
+//     [7, 9, 10]
+//  ];
+//  for (const  row of magicSquare){
+//     console.log(row)
+//  let sum = 0;
+//  for(let num of row){
+//     // sum += num;
+// }
+// console.log(`Row of ${row} Totals to ${sum}`)
+//  }
+//  console.log(`Row ${magicSquare[0]} sums to ${sum}`);
+
+ //looping over objects
+ const movieReviews = {
+    Amadeu : 10,
+    Arrival : 9.5,
+    Alien : 9,
+    Amalle : 8
+
+ };
+ for (let movie of Object.keys(movieReviews)){
+    console.log(movie); // returning key values only
+    let score = movieReviews[movie];
+    console.log(score); //returns rating/values only
+    console.log(`I rated ${movie} ${score}/10`);
  }
 
 
 
 
+const shoppingList = {
+Bread :120,
+Milk : 80,
+Sugar : 120,
+SanitaryTowels : 400,
+Cocoa : 200
+}
+
+for (let menu of Object.keys(shoppingList)){
+    console.log(menu);
+    const list =  Object.keys(shoppingList);
+    const price = shoppingList[menu];
+    console.log(list[1]) //return keys
+    // console.log(`I bought ${list[1]}, ${list[2]}
+    // @price ${price(list[1])} + ${price(list[2])}`);
+}
+
+let sum = 0;
+for(let shop in shoppingList){
+    //console.log(shop);
+    // let newPrice = shoppingList(shop);
+    sum += shoppingList[shop];
+}
+console.log(sum); // ..prints sum of each iteration
+
+
+const obj = { a: 1, b : 2, c : 3, d : 4};
+for (const prop in obj){
+    console.log(`obj.${prop} = ${obj[prop]}`);
+}
+const triangle = {
+    a: 1, b : 2, c : 3, d : 4}
+    function ColoredTriangle(){
+        this.color = "red";
+    }
+    ColoredTriangle.prototype = triangle;
+    const object = new ColoredTriangle();
+    for (const prop in obj) {
+        if(Object.hasOwn(triangle, prop)){
+        console.log(`object.${prop} = ${object[prop]}`)
+        }
+    };
+var x = 1;
+{
+    var x = 2;
+    console.log(x)
+}
+var x = 5;
+var y = 10;
+var z = x + y;
