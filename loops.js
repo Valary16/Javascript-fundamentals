@@ -174,6 +174,11 @@ var x = 1;
     var x = 2;
     console.log(x)
 }
-var x = 5;
-var y = 10;
-var z = x + y;
+firstName = "John";
+lastName = "Doe";
+age = 35;
+h
+// var x = 5;
+// var y = 10;
+// var z = x + y;
+// make a loop jump to next iteration when i is 5

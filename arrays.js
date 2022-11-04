@@ -115,16 +115,36 @@ for(i = 0; i<numbers.length; i++) {
         console.log(`${numbers[i]} is an odd number`)
     }
 }
-// BREAK  KEY WORD
-let targetNum = Math.floor(Math.random()*10);
-let guess = Math.floor(Math.random()*10);
-while(true){
-    guess = Math.floor(Math.random()*10);
-    if(guess === targetNum){
-        console.log(Guessed ${guess} & trgetNum: ${targetNum}...Correct);
-        break;
+// additional for loop notes
+let number = [2, 7, 11, 15]
+for (i = 0; i<number.length; i++){
+    for( let j = 0; i<number.length; i++){   
+        if (j !=i);
+        if(target - number[i])== number[j]{
+            return(i, j);
+            console.log(j);
+        }
     }
+
+};
+let map = newMap()
+for(let i = 0; i < number.lemght; i++){
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
