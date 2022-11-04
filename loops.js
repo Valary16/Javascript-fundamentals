@@ -150,7 +150,7 @@ for(let shop in shoppingList){
     // let newPrice = shoppingList(shop);
     sum += shoppingList[shop];
 }
-console.log(sum); // ..prints sum of each iteration
+console.log(sum); //...prints sum of each iteration
 
 
 const obj = { a: 1, b : 2, c : 3, d : 4};

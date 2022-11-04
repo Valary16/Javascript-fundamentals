@@ -70,3 +70,52 @@ function multiply(x,y){
   console.log(x*y)
 }
 multiply(5,6);
+
+function divide(x,y){
+  console.log(x/y)
+}
+divide(6,2);
+
+function arr(x,y){
+  return [x,y] ;//returns more than one value
+}
+let stored = arr(5,7);{
+  console.log(stored); //Storing for future use and reusing
+}
+// if you have areturn statement in the middle of a function the
+//  code after the return statement will not be executed
+function sqrt(sq){
+  return sq * sq;
+  console.log('hello');
+}
+let square = sqrt(4);
+console.log(square);
+//NO RETURN
+function sum1(x,y){
+  console.log(x + y);
+}
+const sums3 = sum1(10,6);
+console.log(sums3);// result is undefined that means no return
+//  function addNext(x, y){
+//   console.log(x+y)
+//  }
+//  const next = addNext(2,4)
+//  console.log(next);
+function addNext(x, y){
+  return(x+y)
+ }
+ const next = addNext(2,4)
+ console.log(next); //6
+
+ function isPurple(color){
+ if(color === "purple"){
+  return true;
+ }
+ else{
+  return false;
+ }
+ }
+  // let newColor =isPurple("purple")
+   let newColor =isPurple("blue")
+  console.log(newColor);
+
