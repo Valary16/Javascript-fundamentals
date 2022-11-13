@@ -324,7 +324,38 @@ const x = 1;
 
 }
 console.log(x)//returns 1 coz it is outside the block scoped content in the calibrackets
+
+//below is not a form of hoisting
 {
   var f = 1;
 }
-console.log(f); // 1
+console.log(f); // 1 There's no "access before declaration" here; 
+// it's simply because var declarations are not scoped to blocks.
+console.log(squareq(5)) //hoisting
+function squareq(n){
+  return n*n
+} //function scope
+
+function doubleArr(arr){
+  const result = [];
+  for(let num of arr){
+    let double = num * 2;
+    result.push(double);
+    // result.push(3);
+    //  return result;
+  }
+  // return result;
+}
+
+console.log(doubleArr([2,3,4]))
+ //  work on movie example
+ // storing function in objects to do()
+//  print all even numbers from 0-10
+ function isEven([]){
+  for(let n of []){
+    if(n % 2 == 0  && n  < 10);
+    console.log(n)
+  }
+ };
+ return isEven[0,10]
+
