@@ -25,24 +25,35 @@ function listNode(val, next)
    // this.val = (val === undefined ? 0 : val) //using ternary operator
     //this.next = (next === undefined ? null : next)
 
-    var mergeList = function(list1,list2){
-        if (!list1 ||list2) return list1||list2
-        let head = new Listwode(null)
-        let curr = head
-        while (list1 && list2){
-            if (list1.val < list2.val){
-                curr.next = list1
-                list1 = list.next
-            }
-            else{
-                curr.next = list2
-                list2 = list2.next
-            }
-            curr = curr.next
-        }
-        curr.next = list1 || list2
-        return head.next
-    }
+    // var mergeList = function(list1, list2){
+       // if (!list1 ||list2) return list1||list2
+        // let head = new Listwode(null)
+        // let curr = head
+        // while (list1 && list2){
+        //     if (list1.val < list2.val){
+        //         curr.next = list1
+        //         list1 = list.next
+        //     }
+        //     else{
+        //         curr.next = list2
+        //         list2 = list2.next
+        //     }
+        //     curr = curr.next
+        // }
+        // curr.next = list1 || list2
+        // return head.next
+    //     if(!list1 || !list2){
+    //         return list1 || list2
+    //     }
+    //     if(list1.val < list2.val ){
+    //         list1.next = mergeTwoList(list1.next.list2)
+    //         return list1
+    //     }
+    //     else{
+    //         list1.next = mergeTwoList(list1.next.list2)
+    //         return list2
+    //     }
+    // }
 
 
 
